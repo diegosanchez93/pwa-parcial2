@@ -1,2 +1,11 @@
-# pwa-parcial2
- parcial 2 de pwa
+# PWA Boilerplate
+
+## Installation
+
+- Clone the Repo
+- Modify the structure as your needs
+- Add your manifest.json
+
+## Under the hood:
+- Bootstrap
+- Service Worker
