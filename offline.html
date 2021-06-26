@@ -1,22 +1,51 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<html lang="es">
+  <head>  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="manifest" href="manifest.json"/>
-    
-    <!-- Bootstrap CSS -->
+    <title>Diego Sánchez | DWN3A | PWA | Parcial 2</title>
+
+    <link rel="icon" type="image/png" href="img/favicon-sitio.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
   </head>
-  <body>
-    <h1 class="alert-danger">Estoy Offline y el cache fallo!</h1>
 
-    <script src="js/register-sw.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <body>
+    <div>   
+      <header class="row">
+        <nav class="col navbar fixed-top navbar-expand-md navbar-dark fondo-header">    
+          <img src="img/logo-sitio.png" alt="Logo" class="p-1" style="width: 150px;">               
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-fijo" aria-controls="menu-fijo" aria-expanded="false" aria-label="Menú Hamburguesa">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-start justify-content-md-end" id="menu-fijo">                          
+              <ul class="w-75 navbar-nav justify-content-around">                       
+                <li class="nav-item"><a class="nav-link" href="index.html" data-ancla="true" data-freno="60">Home</a></li>                                      
+                <li class="nav-item"><a class="nav-link" href="contacto.html" data-ancla="true" data-freno="60">Contacto</a></li>                                                                  
+              </ul>                                            
+          </div>                                             
+        </nav>    
+      </header>   
+      
+      <main class="row">      
+        <section class="offline-response">
+          <img src="img/offline-icon.png" alt="">
+          <p>Ups! Este contenido no pudo ser cargado.</p>
+          <p>Revise si tiene problemas de conectividad.</p>
+        </section>     
+      </main>
+    
+      <footer class="row p-4">
+        <div class="col">
+            <p class="text-center">Alumno: Diego Sánchez | Profesor: Gonzalo Rubino | Materia: Aplicaciones Web Progresivas | Comisión: DWN3A | Año: 2021</p>
+            <p class="text-center">© www.moviefinder.com 2021 | Todos los derechos reservados</p>
+        </div>     
+      </footer>   
+    </div>
+    
+
+    <script src="js/main.js"></script>  
+    <script src="js/register-sw.js"></script> 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

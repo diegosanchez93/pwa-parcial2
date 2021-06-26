@@ -1,4 +1,4 @@
-// Chequeo si el browser puede usar Service Worker
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('../service-worker.js')
       .then(reg => {
@@ -9,23 +9,27 @@ else {
   console.log("Service worker no soportado.");
 }
 
-// Event Listener para Offline/ Online Status
+
 window.addEventListener('offline', event => {
   document.querySelector('body').classList.add('offline');
-  main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
+  main.innerHTML = `<section class="offline-response">
+                      <img src="img/offline-icon.png" alt="">
+                      <p>Ups! Este contenido no pudo ser cargado.</p>
+                      <p>Revise si tiene problemas de conectividad.</p>
+                   </section>`    
 });
+
 
 window.addEventListener('online', event => {
-  document.querySelector('body').classList.remove('offline');
-  openSoccerApi();
+  document.querySelector('body').classList.remove('offline'); 
 });
 
-// A veces este evento falla, ojo!
-// Sirve para saber si el navegador esta offline, cuando entramos offline. 
-// Es decir, no se disparo los eventos de arriba aun, y necesito conocer el estado.
-// 
 
 if (!navigator.onLine) {
   document.querySelector('body').classList.add('offline');
-  main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
+  main.innerHTML = `<section class="offline-response">
+                       <img src="img/offline-icon.png" alt="">
+                       <p>Ups! Este contenido no pudo ser cargado.</p>
+                       <p>Revise si tiene problemas de conectividad.</p>
+                    </section>`    
 }
