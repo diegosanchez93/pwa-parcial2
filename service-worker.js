@@ -4,6 +4,7 @@ const cacheName = 'cache-version-1';
 const precache = [
   './js/register-sw.js',
   './index.html',
+  './contacto.html',
   './offline.html'
 ];
 
@@ -46,7 +47,7 @@ function shouldAcceptResponse(response) {
 
 
 self.addEventListener('fetch', event => {
-  
+
   event.respondWith(
       caches.open(cacheName).then(cache => { 
         return cache.match(event.request).then(response => {          
