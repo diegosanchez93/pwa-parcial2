@@ -2,10 +2,21 @@
 const cacheName = 'cache-version-1';
 
 const precache = [
-  './js/register-sw.js',
+  'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
+  'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',
+  'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
   './index.html',
   './contacto.html',
-  './offline.html'
+  './offline.html',
+  './js/main.js',
+  './js/register-sw.js',
+  './css/styles.css',
+  './img/favicon-sitio.png',
+  './img/icon-192x192.png',
+  './img/icon-256x256.png',
+  './img/icon-384x384.png',
+  './img/icon-512x512.png',
 ];
 
 
