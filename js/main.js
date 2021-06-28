@@ -1,5 +1,5 @@
 const KEY_API_OMDB = 'aa14945f';
-const URL_OMDB = 'http://www.omdbapi.com/';
+const URL_OMDB = 'https://www.omdbapi.com/';
 
 
 
