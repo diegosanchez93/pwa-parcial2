@@ -15,7 +15,7 @@ const precache = [
   'img/favicon-sitio.png',
   'img/logo-sitio.png',
   'img/fondo-patron-geometrico.jpg',
-  'img/offline-icon.png',
+  'img/offline-icon-white.png',
   'img/icon-192x192.png',
   'img/icon-256x256.png',
   'img/icon-384x384.png',

@@ -13,7 +13,7 @@ else {
 window.addEventListener('offline', event => {
   document.querySelector('body').classList.add('offline');
   main.innerHTML = `<section class="offline-response">
-                      <img src="img/offline-icon.png" alt="Icono de sin internet">
+                      <img src="../img/offline-icon-white.png" alt="Icono de sin internet">
                       <p>Ups! Este contenido no pudo ser cargado.</p>
                       <p>Revise si tiene problemas de conectividad.</p>
                    </section>`    
@@ -28,7 +28,7 @@ window.addEventListener('online', event => {
 if (!navigator.onLine) {
   document.querySelector('body').classList.add('offline');
   main.innerHTML = `<section class="offline-response">
-                       <img src="img/offline-icon.png" alt="">
+                       <img src="../img/offline-icon-white.png" alt="Icono de sin internet">
                        <p>Ups! Este contenido no pudo ser cargado.</p>
                        <p>Revise si tiene problemas de conectividad.</p>
                     </section>`    
