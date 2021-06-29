@@ -4,7 +4,7 @@
     "display": "fullscreen",
     "scope": "/",
     "start_url": "/index.html",
-    "name": "Movie Finder - Parcial 2",
+    "name": "Movie Finder - Buscador de Películas",
     "short_name": "Movie Finder",
     "description": "App para buscar peliculas",
     "icons": [
