@@ -11,6 +11,8 @@ const precache = [
   'offline.html',
   'js/main.js',
   'js/register-sw.js',
+  'js/service-worker.js',
+  'manifest.json',
   'css/styles.css',
   'img/favicon-sitio.png',
   'img/logo-sitio.png',
