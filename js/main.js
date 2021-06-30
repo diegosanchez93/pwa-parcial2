@@ -1,4 +1,4 @@
-const YOUR_API_KEY_OMDB = 'aa14945f';
+const YOUR_API_KEY_OMDB = '';
 const URL_OMDB = 'https://www.omdbapi.com/';
 
 
