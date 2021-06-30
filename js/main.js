@@ -1,4 +1,4 @@
-const KEY_API_OMDB = 'aa14945f';
+const YOUR_API_KEY_OMDB = 'aa14945f';
 const URL_OMDB = 'https://www.omdbapi.com/';
 
 
@@ -17,7 +17,7 @@ button.addEventListener("click", ()=> {
 function buscarPelicula(peliculaAbuscar) {              
 	console.log('Palabra',peliculaAbuscar);
 
-	const fetchPromiseOMDB = fetch(`${URL_OMDB}?i=tt3896198&apikey=${KEY_API_OMDB}&t=${peliculaAbuscar}`);
+	const fetchPromiseOMDB = fetch(`${URL_OMDB}?i=tt3896198&apikey=${YOUR_API_KEY_OMDB}&t=${peliculaAbuscar}`);
 	
                                                    
 	fetchPromiseOMDB.then(response => {               
